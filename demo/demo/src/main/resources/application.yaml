@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notification_db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: demo-backend-api2
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+logging:
+  level:
+    org.springframework.amqp: DEBUG
+    org.springframework.rabbit: DEBUG

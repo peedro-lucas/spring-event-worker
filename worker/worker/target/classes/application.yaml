@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/notification_db
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  application:
+    name: demo-backend-worker2
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: pedro.lmarinho2002@gmail.com
+    password: encn ztzg wvoc zzoj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+server:
+  port: 8081
